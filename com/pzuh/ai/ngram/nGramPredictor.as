@@ -20,31 +20,21 @@ package com.pzuh.ai.ngram
 			this.maxDataNum = maxDataNum;
 		}
 		
-		public function addSingleData(data:*):void
+		public function addData(...rest):void
 		{
-			if (this.data.length + 1 > maxDataNum) 
+			if (data.length + rest.length > maxDataNum)
 			{
-				this.data.shift();
-			}
-			
-			this.data.push(data);
-		}
-		
-		public function addMultipleData(data:Array):void
-		{
-			if (this.data.length + data.length > maxDataNum)
-			{
-				if (this.data.length < 1) 
+				if (data.length < 1) 
 				{
-					data.splice(0, data.length - maxDataNum);
+					data.splice(0, rest.length - maxDataNum);
 				}
 				else
 				{
-					this.data.splice(0, data.length);
+					data.splice(0, rest.length);
 				}
 			}
 			
-			this.data = this.data.concat(data);
+			data = data.concat(rest);
 		}
 		
 		private function generateNGram():Array

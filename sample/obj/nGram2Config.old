@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'17/04/2012'</value>
+      <value>'04/08/2012'</value>
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
@@ -26,6 +26,9 @@
       <path-element>E:\Pics\flash\API and classess\classes</path-element>
       <path-element>E:\Pics\flash\API and classess\Playtomic</path-element>
       <path-element>E:\Pics\flash\API and classess\ce2\Source</path-element>
+      <path-element>E:\Pics\flash\API and classess\GameTracker_API_AS3_v1_2\src\FGL</path-element>
+      <path-element>E:\Pics\flash\API and classess\greensock-as3</path-element>
+      <path-element>E:\Pics\flash\API and classess\NewgroundsAPI_AS3</path-element>
       <path-element>G:\Program Files\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
   </compiler>

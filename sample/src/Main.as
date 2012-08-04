@@ -24,7 +24,7 @@ package
 			
 			var nGram:nGramPredictor = new nGramPredictor(3, 100);
 			
-			nGram.addSingleData("S");
+			nGram.addData("R", "S", "S", "P", "S", "P", "S", "P", "S", "P");			
 			
 			var action:String= nGram.getNextAction() as String;
 			
@@ -34,7 +34,7 @@ package
 			trace("========================================");
 			trace("");
 			
-			nGram.addMultipleData(["R", "S", "S", "P", "S", "P", "S", "P", "S", "P"]);
+			nGram.addData("S");
 			
 			action = nGram.getNextAction() as String;
 			
